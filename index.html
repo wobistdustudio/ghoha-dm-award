@@ -139,6 +139,7 @@ ul.ideas b{display:block;font-weight:700;font-size:18px;margin-bottom:4px}
 .live h3{margin:0 0 12px;color:#fff;font-size:clamp(24px,2.6vw,32px)}.live .kicker{color:#e0ad6d}.live p{color:#ddd6ca}.live .note{color:#a8a197}.live .url{font-size:14px;color:#cfc7ba;margin-top:10px}
 .live .qrbox{background:#fff;padding:14px;border-radius:10px;width:min(220px,60vw)}
 @media(max-width:760px){.live{grid-template-columns:minmax(0,1fr)}}
+.day-pill{background:#fff6e6;border-color:#fff6e6;color:#2a2116}.day-pill:hover,.day-pill:focus-visible{background:#ffffff}
 .live-pill{margin-left:8px;background:#e0ad6d;border-color:#e0ad6d;color:#1a140c}.live-pill:hover{background:#ecc189}
 @media print{.live{background:#f3eff8;color:#1c1a17;border:1.5px solid #3b2a6b;break-inside:avoid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);padding:6mm}.live h3{color:#1c1a17}.live p,.live .url{color:#222}.live .qrbox{width:40mm;padding:0}.live-pill{color:#1a140c}}
 .ico{width:1.05em;height:1.05em;vertical-align:-.15em;display:inline-block}
@@ -173,6 +174,30 @@ ul.ideas b{display:block;font-weight:700;font-size:18px;margin-bottom:4px}
  .bridge{background:#fff}.bridge .precedent{box-shadow:none}
  section.band.bridge{break-before:auto}
 }
+.motto{margin:4px 0 18px;padding:16px 20px;border-left:4px solid var(--acc);background:var(--paper);border-radius:0 8px 8px 0;max-width:900px}
+.motto .kicker{display:block;margin-bottom:4px}.motto p{margin:0;font-size:clamp(19px,2vw,23px);font-weight:700;line-height:1.35}
+.covercap{margin:0;padding:10px max(5vw,16px);font-size:13.5px;color:var(--mute);background:var(--bg);border-bottom:1px solid var(--rule)}
+.imgno{color:var(--acc);font-weight:700}
+.scenes.noimg{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px}.scene.noimg{grid-template-columns:minmax(0,1fr)}
+@media(max-width:760px){.scenes.noimg{grid-template-columns:minmax(0,1fr)}}
+.cycle{margin:22px 0;padding:22px;border:1px solid var(--rule);border-radius:12px;background:var(--bg);max-width:1000px}
+.cy-row{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.cy-box{flex:1 1 160px;border:1.5px solid var(--rule);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.cy-box b{font-size:15.5px}.cy-box span{font-size:13.5px;color:var(--mute)}.cy-box.n{border-color:#3b2a6b;background:#efeaf8;color:#1c1a17}.cy-box.n span{color:#4a4458}
+.cy-arr{align-self:center;color:var(--acc);font-weight:700;font-size:20px}
+.cy-loop{margin-top:12px;font-size:14px;color:var(--mute);text-align:center}
+.cy-axis{margin-top:12px;padding:10px;border-radius:8px;background:var(--paper);text-align:center;font-weight:700;font-size:14.5px}
+@media(max-width:700px){.cy-arr{transform:rotate(90deg);width:100%;text-align:center}}
+.vislist{padding-left:0;list-style:none;margin:14px 0;max-width:900px}.vislist li{padding:8px 0;border-bottom:1px solid var(--rule)}.vislist b{color:var(--acc)}
+@media print{.motto{background:#f6f2ea}.covercap{font-size:8.5pt;padding:2mm 0}.scenes.noimg{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 8mm}.cycle{break-inside:avoid}.cy-box{padding:3mm;flex:1 1 0}.cy-row{flex-wrap:nowrap}.cy-arr{transform:none;width:auto}}
+.cw{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(20px,4vw,52px);align-items:start;margin:0 0 34px;padding:clamp(20px,3vw,36px);border-radius:12px;background:linear-gradient(100deg,#f3e3c4 0%,#f3e3c4 38%,#2a2440 62%,#1b1730 100%)}
+.cw-head h3{margin:0 0 12px;font-size:clamp(26px,3vw,36px);color:#2a2116}.cw-head .kicker{color:#9a6326}.cw-head .lead{color:#3a2a14;margin:0}
+.cw-pairs{display:grid;gap:12px}
+.cw-pair{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:4px 10px;align-items:center;background:rgba(255,255,255,.92);border-radius:10px;padding:12px 14px;color:#1c1a17}
+.cw-a,.cw-b{font-weight:700;font-size:15.5px}.cw-b{text-align:right;color:#3b2a6b}.cw-a{color:#9a6326}.cw-x{color:#6b655c;font-weight:700}
+.cw-pair p{grid-column:1/-1;margin:0;font-size:13.5px;color:#55504a}
+@media(max-width:860px){.cw{grid-template-columns:minmax(0,1fr);background:linear-gradient(180deg,#f3e3c4 0%,#f3e3c4 45%,#2a2440 100%)}}
+@media print{.cw{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:6mm;padding:5mm;background:#f6f0e4;border:1px solid #d9cdb6;break-inside:avoid}.cw-pair{border:1px solid #ddd}}
 .langsw{position:fixed;top:12px;right:12px;z-index:20;display:flex;background:rgba(20,18,26,.82);backdrop-filter:blur(8px);border-radius:999px;padding:4px;box-shadow:0 4px 18px rgba(0,0,0,.25)}
 .langsw button{font:inherit;font-weight:700;font-size:14px;min-width:48px;min-height:40px;border:0;border-radius:999px;background:transparent;color:#e9e3d8;cursor:pointer}
 .langsw button[aria-pressed=true]{background:#e0ad6d;color:#1a140c}.langsw button:focus-visible{outline:2px solid #fff;outline-offset:2px}
@@ -227,9 +252,9 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
 <header class="hero">
   <img data-k="hero" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="The GHOHA afterlife city: floating library towers joined by stairways in a sunlit sky">
   <div class="cap"><div class="wrap">
-    <h1>GHOHA_An Afterlife City</h1>
-    <p class="sub">An afterlife-city pre-sale project for Schlosslichtspiele 2027: claim a home by day at the Marktplatz, watch the city it joins grow on the palace by night.</p>
-    <p class="meta">Wobistdu Studio · Yunju Park &amp; Junwoo Chung · dm-Award “connecting worlds” 2026 · November 2026</p>
+    <h1>GHOHA<br>An Afterlife City</h1>
+    <p class="sub">Connecting this life and the afterlife: claim your afterlife home while alive.</p>
+    <p class="meta">Wobistdu Studio · Yunju Park &amp; Junwoo Chung · dm-Award · November 2026</p>
     <a class="webpill" href="https://www.wobistdustudio.com" target="_blank" rel="noopener">www.wobistdustudio.com</a> <a class="webpill day-pill" data-v="en" href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></g></svg> Day: play the game ↗</a> <a class="webpill live-pill" data-v="show" href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="currentColor"/></svg> Night: the live city ↗</a>
   </div></div>
 </header>
@@ -253,16 +278,16 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
       <a class="webcard" href="https://www.wobistdustudio.com" target="_blank" rel="noopener"><span>Studio website · portfolio of public media art</span><strong>www.wobistdustudio.com</strong></a>
       <div class="person"><h4>Yunju Park, media artist</h4><p>She researches the death and vitality of objects. Beyond the physical realm, she explores what objects can become as data in an immaterial world, and imagines their afterlife. MA Public Art and Contemporary Art, Bauhaus-Universität Weimar (2017); BFA Fine Arts, Ewha Womans University (2009). More than 100 exhibitions in 11 countries.</p></div>
       <div class="person"><h4>Junwoo Chung, architect</h4><p>He designs buildings beyond physical architecture, in virtual space. MA Architecture, Bauhaus-Universität Weimar (2017); BA Architecture, University of Seoul (2012). Architect at PBR, Karlsruhe (until 2021).</p></div>
-      <p class="note"><b>Core team:</b> Yunju Park (concept and artistic direction) · Junwoo Chung (architecture, 3D and facade video) · Hanhyeok Kim (producer) · Jihye Choi (graphic and sculpture design).</p>
+      <p class="note"><b>Core team:</b> Yunju Park (concept and artistic direction) · Junwoo Chung (architecture, 3D and facade video) · Hanhyunk Kim (producer) · Jihye Choi (graphic and sculpture design).</p>
     </div>
     <div>
       <table class="stack"><thead><tr><th>Field</th><th>Details</th></tr></thead><tbody>
         <tr><td>Applicant</td><td>Wobistdu Studio, artist collective of Yunju Park and Junwoo Chung (registered as a sole proprietorship, Republic of Korea)</td></tr>
         <tr><td>Artists</td><td>Yunju Park (media artist) and Junwoo Chung (architect)</td></tr>
         <tr><td>Email</td><td>wobistdustudio@gmail.com</td></tr>
-        <tr><td>Postal address</td><td>Seoul, Republic of Korea</td></tr>
-        <tr><td>Phone</td><td>+82 010 3172 8454</td></tr>
-        <tr><td>Nationality</td><td>Republic of Korea / Seoul, Republic of Korea <mark class="todo">check</mark></td></tr>
+        <tr><td>Postal address</td><td>16-I Twintree Tower-A, 6 Yulgok-ro, Jongno-gu, Seoul 03142, Republic of Korea</td></tr>
+        <tr><td>Phone</td><td>+82 10 3172 8454</td></tr>
+        <tr><td>Nationality</td><td>Republic of Korea / Seoul, Republic of Korea</td></tr>
         <tr><td>Website</td><td><a href="https://www.wobistdustudio.com" target="_blank" rel="noopener"><b>www.wobistdustudio.com</b></a> (studio)<br><a class="game-link game-host" href="#">ghoha.wobistdustudio.com</a> (game)<br>instagram.com/junuwana.wobistdu</td></tr>
       </tbody></table>
       <h3>Awards and selections</h3>
@@ -283,6 +308,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
 <!-- 2 SKETCH -->
 <section class="band alt" id="sketch"><div class="wrap">
   <div class="sec-head"><span class="no">2</span><h2>Project sketch</h2></div>
+  <div class="cw"><div class="cw-head"><p class="kicker">connecting worlds</p><h3>This life ↔ the afterlife</h3><p class="lead">GHOHA connects the world of the living with the world after death. In this life, visitors play a participatory game and claim a home for their afterlife; on the palace, the media artwork shows the afterlife city those homes build together. Every link between the two worlds is made by the audience itself.</p></div><div class="cw-pairs"><div class="cw-pair"><div class="cw-a">This life</div><div class="cw-x" aria-hidden="true">↔</div><div class="cw-b">The afterlife</div><p>A real home is a compromise; the afterlife home holds our wishes in full.</p></div><div class="cw-pair"><div class="cw-a">Analog · Marktplatz</div><div class="cw-x" aria-hidden="true">↔</div><div class="cw-b">Digital · palace facade</div><p>A solid monument and the visitor’s own phone lead to the city projected at night.</p></div><div class="cw-pair"><div class="cw-a">One person</div><div class="cw-x" aria-hidden="true">↔</div><div class="cw-b">A community</div><p>Each claimed home joins a district; night by night, homes become a society.</p></div></div></div>
   <div class="col sketch">
     <p class="kicker">GHOHA – Afterlife City Pre-Sale Project <span class="chars">· 1,498 characters incl. spaces</span></p>
     <p class="claim">Claim your afterlife home while you are alive!</p>
@@ -299,6 +325,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
 <!-- 3 STORYBOARD -->
 <section class="band" id="storyboard"><div class="wrap">
   <div class="sec-head"><span class="no">3</span><h2>Storyboard</h2></div>
+  <div class="motto"><span class="kicker">Motto · PLAYGROUND</span><p>A playground by day, where you build a home in a game; a playground by night, where those homes form a society.</p></div>
   <p class="col lead">GHOHA runs on a daily cycle in two places. By day on the Marktplatz, visitors claim afterlife homes in the web game; by night on the palace, those homes settle into a city.</p>
 
   
@@ -343,7 +370,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
     <p class="lead" style="margin-top:16px">The game the Marktplatz monument links to is already online, in the original Korean version and an English example version. It runs in any phone or desktop browser; nothing to install. Answer a few questions, receive a recommended afterlife building, build it and get your resident number.</p>
   </div>
   <div class="vgrid"><div class="vcard"><div class="qrbox" data-v="en" aria-label="QR English"></div><div class="vtext"><strong>English</strong><span>Example version</span><a class="playbtn sm" data-v="en" href="#" target="_blank" rel="noopener">Open in English</a><span class="url game-host" data-v="en"></span></div></div><div class="vcard"><div class="qrbox" data-v="ko" aria-label="QR 한국어 · Korean"></div><div class="vtext"><strong>한국어 · Korean</strong><span>Original version, 2026 premiere</span><a class="playbtn sm" data-v="ko" href="#" target="_blank" rel="noopener">Open in Korean</a><span class="url game-host" data-v="ko"></span></div></div>
-    <div class="vcard de"><div class="badge">Release 2027</div><div class="vtext"><strong>Deutsch · German version</strong><span>Coming in 2027: a German version will be released in time for the exhibition period of Schlosslichtspiele 2027, so that visitors in Karlsruhe can play in German, English or Korean.</span></div></div>
+    <div class="vcard de"><div class="badge">Release 2027</div><div class="vtext"><strong>Deutsch · German version</strong><span>Coming in 2027: a German version will be ready by July 2027, in time for the exhibition period of Schlosslichtspiele 2027, so that visitors in Karlsruhe can play in German, English or Korean.</span></div></div>
   </div>
   <ol class="steps quick"><li>Choose a version and open it on a phone (scan the code) or here in the browser.</li><li>Answer the short survey on how you want to live after death.</li><li>Pick your recommended building, adjust it, claim it.</li><li>Keep your resident number to revisit your home later.</li></ol>
   <p class="note">Scan with a phone camera.</p>
@@ -421,6 +448,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
   <p class="col lead">GHOHA connects the Marktplatz and the palace: visitors claim a home by day on the square and see the city it joins by night on the facade.</p>
   <figure class="plate" style="max-width:980px"><img data-k="cycle" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Daily cycle diagram: four stations from the square to the palace"><figcaption>Daily cycle · 4 stations, square to palace.</figcaption></figure>
   <ul class="ideas">
+    <li><b>Connecting two worlds.</b>The project links this life and the afterlife through participation: visitors act in the world of the living, by playing and claiming, and see the result in the afterlife city on the palace. The game is the bridge, the facade is the other world.</li>
     <li><b>One axis, two homes.</b>Karl-Friedrich-Straße links the palace, where the founder lived, with the pyramid, where he rests. The monument stands at the pyramid; the city it offers appears on the palace.</li>
     <li><b>The monument echoes the pyramid.</b>A small hexagonal pyramid of steel or wood stands as the cornerstone of a second new city, beside the tomb of the founder of the first.</li>
     <li><b>Analog to digital and back.</b>Visitors walk around a solid object, scan it and play on their own phones. At night the city of such choices appears at the scale of the palace.</li>
@@ -446,7 +474,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
     <tr><td>Finish</td><td>Steel: matte powder coat in stone grey. Timber: exterior-grade matte finish. Both with anti-graffiti clear coat. No weathering steel, so no rust stains on the historic paving.</td></tr>
     <tr><td>Faces</td><td>Six inset panels (enamel or laser-engraved stainless steel), one per district: building image, district name in German and English, QR code.</td></tr>
     <tr><td>Top</td><td>Laser-cut steel plate with GHOHA’s stone-lattice pattern.</td></tr>
-    <tr><td>Base</td><td>Internal ballast and rubber pads, freestanding, no anchoring into the ground. Weight depends on the material, approx. 100 kg in total <mark class="todo">to be confirmed by the fabricator</mark>.</td></tr>
+    <tr><td>Base</td><td>Internal ballast and rubber pads, freestanding, no anchoring into the ground. Weight depends on the material, approx. 100 kg in total.</td></tr>
     <tr><td>Fabrication</td><td>Built by a metal or carpentry workshop in the Karlsruhe region from our drawings, to avoid shipping from Korea.</td></tr>
   </tbody></table>
   <figure class="plate"><img data-k="sheet" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Monument drawing sheet: elevation, plan of six faces, materials, lattice top"><figcaption>Monument drawing sheet: elevation with dimensions, plan of the six faces, materials, lattice top. Concept drawing, not for construction.</figcaption></figure>
@@ -465,11 +493,11 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
     <tr><td>Concept and artistic direction</td><td>Yunju Park</td><td>Throughout</td></tr>
     <tr><td>Facade video and 3D</td><td>Junwoo Chung</td><td>Production</td></tr>
     <tr><td>Production management, contact with organisers</td><td>Hanhyunk Kim</td><td>Throughout</td></tr>
-    <tr><td>Graphic and monument design</td><td>Jihye Choi, Boa Cha <mark class="todo">check romanisation</mark></td><td>Production</td></tr>
+    <tr><td>Graphic and monument design</td><td>Jihye Choi, Boa Cha</td><td>Production</td></tr>
     <tr><td>Fabrication, delivery, installation, removal</td><td>Local metal or carpentry workshop, 2 people</td><td>1 day before opening, 1 day after closing</td></tr>
     <tr><td>On-site artists</td><td>2 people from the team</td><td>Setup and opening, approx. 10 days</td></tr>
     <tr><td>Supervision and security</td><td>None needed: the monument is unmanned and freestanding. It relies on the festival’s general security on the square.</td><td>—</td></tr>
-    <tr><td>Weekly check</td><td>Cleaning and QR test, by a local assistant or with support from the Kulturamt <mark class="todo">to be agreed</mark></td><td>Once a week</td></tr>
+    <tr><td>Weekly check</td><td>Cleaning and QR test, by a local assistant or with support from the Kulturamt</td><td>Once a week</td></tr>
   </tbody></table>
 
   <h3>5.4 Usage rights granted</h3>
@@ -477,14 +505,18 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
     <p>Wobistdu Studio grants the City of Karlsruhe (Kulturamt, UNESCO City of Media Arts), dm-drogerie markt, ZKM and KME the right to show the facade video at Schlosslichtspiele 2027 and <i>Media art is here</i> 2027.</p>
     <p>They may also photograph, film and document the work and publish images and video excerpts for festival communication, press, the award and the archive, in print and online. These rights are non-exclusive, free of charge and unlimited in time, with the credit “Wobistdu Studio, <i>GHOHA – A City for the Afterlife</i>, 2027”.</p>
     <p>Copyright remains with Wobistdu Studio. All music and images are original works of the studio.</p>
-    <p>Personal data: when visitors claim a building in the game, only resident numbers are shown, never names or personal data <mark class="todo">confirm what data the game stores, for GDPR</mark>.</p>
+    <p>Personal data: when visitors claim a building in the game, only resident numbers are shown, never names or personal data.</p>
   </div>
+
+  <h3>5.5 Schedule</h3>
+  <p class="col">All parts are ready by July 2027, in time for the production deadline of 31 July 2027.</p>
+  <table class="stack" style="max-width:900px"><thead><tr><th>Period</th><th>Milestone</th></tr></thead><tbody><tr><td>Dec 2026 – Mar 2027</td><td>Concept development, 3D architecture and storyboard of the facade film; monument drawings</td></tr><tr><td>Apr – Jun 2027</td><td>Facade film production and sound; fabrication of the monument in the Karlsruhe region</td></tr><tr><td>By July 2027</td><td>Facade film delivered to the production guideline; monument completed; German version of the web game released</td></tr><tr><td>12 Aug – 13 Sep 2027</td><td>Installation on the Marktplatz, opening, four weeks of SCHLOSSLICHTSPIELE, removal</td></tr></tbody></table>
 </div></section>
 
 <!-- 6 VISUALS -->
 <section class="band alt" id="visuals"><div class="wrap">
   <div class="sec-head"><span class="no">6</span><h2>Visual material</h2></div>
-  <p class="col">Five images carry the proposal; links point to the working game and the 2026 premiere. <mark class="todo">The call allows 5 images, 3 clips or 5 links; whether they can be combined is not stated. Ask cityofmediaarts@kultur.karlsruhe.de, or send images only.</mark></p>
+  <p class="col">Five images carry the proposal; links point to the working game and the 2026 premiere.</p>
   <div class="vis">
     <figure><img data-k="iso6" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><figcaption><span class="n">1</span>Night view: the six districts unfolding across the palace facade. ZKM 3D model and 10,800 px template.</figcaption></figure>
     <figure><img data-k="iso3" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><figcaption><span class="n">2</span>Facade strip, new residents: homes with resident numbers on the central wing.</figcaption></figure>
@@ -495,7 +527,6 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
   <table class="stack" style="margin-top:28px;max-width:860px"><thead><tr><th>Link</th><th>What it shows</th></tr></thead><tbody>
     <tr><td><a class="game-link game-host" href="#">ghoha.wobistdustudio.com</a></td><td>The working mobile web game · <a href="#play">play it now</a></td></tr>
     <tr><td><a data-v="show" href="#" target="_blank" rel="noopener"><span class="game-host" data-v="show"></span></a></td><td>Live web animation: the GHOHA city growing in real time, the basis of the facade film</td></tr>
-    <tr><td><mark class="todo">link to 2026 exhibition video</mark></td><td>The premiere in Seoul</td></tr>
     <tr><td><a href="https://www.wobistdustudio.com" target="_blank" rel="noopener">www.wobistdustudio.com</a></td><td>Previous public media art, incl. Incheon International Airport</td></tr>
   </tbody></table>
 </div></section>
@@ -525,9 +556,9 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
 <header class="hero">
   <img data-k="hero" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Die Jenseitsstadt GHOHA: schwebende Bibliothekstürme, durch Treppen verbunden, in einem sonnigen Himmel">
   <div class="cap"><div class="wrap">
-    <h1>GHOHA_An Afterlife City</h1>
-    <p class="sub">Ein Vorverkaufsprojekt für eine Stadt im Jenseits, für die Schlosslichtspiele 2027: tagsüber auf dem Marktplatz ein Zuhause reservieren, nachts am Schloss die Stadt wachsen sehen, zu der es gehört.</p>
-    <p class="meta">Wobistdu Studio · Yunju Park &amp; Junwoo Chung · dm-Award „connecting worlds“ 2026 · November 2026</p>
+    <h1>GHOHA<br>An Afterlife City</h1>
+    <p class="sub">Dieses Leben und das Jenseits verbinden: Sichern Sie sich Ihr Zuhause im Jenseits, solange Sie leben.</p>
+    <p class="meta">Wobistdu Studio · Yunju Park &amp; Junwoo Chung · dm-Award · November 2026</p>
     <a class="webpill" href="https://www.wobistdustudio.com" target="_blank" rel="noopener">www.wobistdustudio.com</a> <a class="webpill day-pill" data-v="en" href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></g></svg> Tag: das Spiel spielen ↗</a> <a class="webpill live-pill" data-v="show" href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="currentColor"/></svg> Nacht: die Live-Stadt ↗</a>
   </div></div>
 </header>
@@ -551,16 +582,16 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
       <a class="webcard" href="https://www.wobistdustudio.com" target="_blank" rel="noopener"><span>Website des Studios · Portfolio öffentlicher Medienkunst</span><strong>www.wobistdustudio.com</strong></a>
       <div class="person"><h4>Yunju Park, Medienkünstlerin</h4><p>Sie erforscht Tod und Lebendigkeit der Dinge. Jenseits des Physischen untersucht sie, was Dinge als Daten in einer immateriellen Welt werden können, und imaginiert ihr Nachleben. MA Public Art und Contemporary Art, Bauhaus-Universität Weimar (2017); BFA Bildende Kunst, Ewha Womans University (2009). Mehr als 100 Ausstellungen in 11 Ländern.</p></div>
       <div class="person"><h4>Junwoo Chung, Architekt</h4><p>Er entwirft Gebäude jenseits der physischen Architektur, im virtuellen Raum. MA Architektur, Bauhaus-Universität Weimar (2017); BA Architektur, University of Seoul (2012). Architekt bei PBR, Karlsruhe (bis 2021).</p></div>
-      <p class="note"><b>Kernteam:</b> Yunju Park (Konzept und künstlerische Leitung) · Junwoo Chung (Architektur, 3D und Fassadenvideo) · Hanhyeok Kim (Produktion) · Jihye Choi (Grafik- und Skulpturdesign).</p>
+      <p class="note"><b>Kernteam:</b> Yunju Park (Konzept und künstlerische Leitung) · Junwoo Chung (Architektur, 3D und Fassadenvideo) · Hanhyunk Kim (Produktion) · Jihye Choi (Grafik- und Skulpturdesign).</p>
     </div>
     <div>
       <table class="stack"><thead><tr><th>Feld</th><th>Angaben</th></tr></thead><tbody>
         <tr><td>Bewerber</td><td>Wobistdu Studio, Künstlerkollektiv von Yunju Park und Junwoo Chung (eingetragen als Einzelunternehmen, Republik Korea)</td></tr>
         <tr><td>Künstler*innen</td><td>Yunju Park (Medienkünstlerin) und Junwoo Chung (Architekt)</td></tr>
         <tr><td>E-Mail</td><td>wobistdustudio@gmail.com</td></tr>
-        <tr><td>Postanschrift</td><td>Seoul, Republik Korea</td></tr>
-        <tr><td>Telefon</td><td>+82 010 3172 8454</td></tr>
-        <tr><td>Nationalität</td><td>Republik Korea / Seoul, Republik Korea <mark class="todo">prüfen</mark></td></tr>
+        <tr><td>Postanschrift</td><td>16-I Twintree Tower-A, 6 Yulgok-ro, Jongno-gu, Seoul 03142, Republik Korea</td></tr>
+        <tr><td>Telefon</td><td>+82 10 3172 8454</td></tr>
+        <tr><td>Nationalität</td><td>Republik Korea / Seoul, Republik Korea</td></tr>
         <tr><td>Website</td><td><a href="https://www.wobistdustudio.com" target="_blank" rel="noopener"><b>www.wobistdustudio.com</b></a> (Studio)<br><a class="game-link game-host" href="#">ghoha.wobistdustudio.com</a> (Spiel)<br>instagram.com/junuwana.wobistdu</td></tr>
       </tbody></table>
       <h3>Preise und Auswahlen</h3>
@@ -581,6 +612,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
 <!-- 2 PROJEKTSKIZZE -->
 <section class="band alt" id="sketch-de"><div class="wrap">
   <div class="sec-head"><span class="no">2</span><h2>Projektskizze</h2></div>
+  <div class="cw"><div class="cw-head"><p class="kicker">connecting worlds</p><h3>Dieses Leben ↔ das Jenseits</h3><p class="lead">GHOHA verbindet die Welt der Lebenden mit der Welt nach dem Tod. In diesem Leben spielen die Besucher*innen ein partizipatives Spiel und reservieren ein Zuhause für ihr Jenseits; am Schloss zeigt das Medienkunstwerk die Jenseitsstadt, die diese Häuser gemeinsam bauen. Jede Verbindung zwischen den beiden Welten stellt das Publikum selbst her.</p></div><div class="cw-pairs"><div class="cw-pair"><div class="cw-a">Dieses Leben</div><div class="cw-x" aria-hidden="true">↔</div><div class="cw-b">Das Jenseits</div><p>Ein reales Zuhause ist ein Kompromiss; das Zuhause im Jenseits nimmt unsere Wünsche ganz auf.</p></div><div class="cw-pair"><div class="cw-a">Analog · Marktplatz</div><div class="cw-x" aria-hidden="true">↔</div><div class="cw-b">Digital · Schlossfassade</div><p>Ein festes Monument und das eigene Telefon führen zur Stadt, die nachts projiziert wird.</p></div><div class="cw-pair"><div class="cw-a">Ein Mensch</div><div class="cw-x" aria-hidden="true">↔</div><div class="cw-b">Eine Gemeinschaft</div><p>Jedes reservierte Zuhause schließt sich einem Bezirk an; Nacht für Nacht werden Häuser zur Gesellschaft.</p></div></div></div>
   <div class="col sketch">
     <p class="kicker">GHOHA – Vorverkaufsprojekt für eine Stadt im Jenseits</p>
     <p class="claim">Sichern Sie sich Ihr Zuhause im Jenseits, solange Sie leben!</p>
@@ -597,6 +629,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
 <!-- 3 STORYBOARD -->
 <section class="band" id="storyboard-de"><div class="wrap">
   <div class="sec-head"><span class="no">3</span><h2>Storyboard</h2></div>
+  <div class="motto"><span class="kicker">Motto · PLAYGROUND</span><p>Ein Spielplatz am Tag, auf dem man im Spiel ein Zuhause baut; ein Spielplatz in der Nacht, auf dem diese Häuser eine Gesellschaft bilden.</p></div>
   <p class="col lead">GHOHA folgt einem täglichen Kreislauf an zwei Orten. Am Tag reservieren die Besucher*innen auf dem Marktplatz im Webspiel ein Zuhause im Jenseits; in der Nacht siedeln sich diese Häuser am Schloss zu einer Stadt an.</p>
 
   
@@ -641,7 +674,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
     <p class="lead" style="margin-top:16px">Das Spiel, zu dem das Monument auf dem Marktplatz führt, ist bereits online, in der koreanischen Originalfassung und in einer englischen Beispielfassung. Es läuft in jedem Browser auf Telefon oder Computer; nichts muss installiert werden. Ein paar Fragen beantworten, ein empfohlenes Jenseitsgebäude erhalten, es bauen und die eigene Bewohnernummer bekommen.</p>
   </div>
   <div class="vgrid"><div class="vcard"><div class="qrbox" data-v="en" aria-label="QR English"></div><div class="vtext"><strong>English</strong><span>Beispielfassung</span><a class="playbtn sm" data-v="en" href="#" target="_blank" rel="noopener">Auf Englisch öffnen</a><span class="url game-host" data-v="en"></span></div></div><div class="vcard"><div class="qrbox" data-v="ko" aria-label="QR 한국어 · Koreanisch"></div><div class="vtext"><strong>한국어 · Koreanisch</strong><span>Originalfassung, Premiere 2026</span><a class="playbtn sm" data-v="ko" href="#" target="_blank" rel="noopener">Auf Koreanisch öffnen</a><span class="url game-host" data-v="ko"></span></div></div>
-    <div class="vcard de"><div class="badge">Veröffentlichung 2027</div><div class="vtext"><strong>Deutsch · deutsche Fassung</strong><span>Erscheint 2027: Eine deutsche Fassung wird rechtzeitig zum Ausstellungszeitraum der Schlosslichtspiele 2027 veröffentlicht, sodass Besucher*innen in Karlsruhe auf Deutsch, Englisch oder Koreanisch spielen können.</span></div></div>
+    <div class="vcard de"><div class="badge">Veröffentlichung 2027</div><div class="vtext"><strong>Deutsch · deutsche Fassung</strong><span>Erscheint 2027: Eine deutsche Fassung ist bis Juli 2027 fertig, rechtzeitig zum Ausstellungszeitraum der Schlosslichtspiele 2027, sodass Besucher*innen in Karlsruhe auf Deutsch, Englisch oder Koreanisch spielen können.</span></div></div>
   </div>
   <ol class="steps quick"><li>Eine Fassung wählen und auf dem Telefon öffnen (Code scannen) oder hier im Browser.</li><li>Die kurze Befragung beantworten, wie man nach dem Tod leben möchte.</li><li>Das empfohlene Gebäude wählen, anpassen und reservieren.</li><li>Die Bewohnernummer behalten, um das Zuhause später wieder zu besuchen.</li></ol>
   <p class="note">Mit der Kamera des Telefons scannen.</p>
@@ -718,6 +751,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
   <p class="col lead">GHOHA verbindet Marktplatz und Schloss: Tagsüber reservieren die Besucher*innen auf dem Platz ein Zuhause, nachts sehen sie an der Fassade die Stadt, zu der es gehört.</p>
   <figure class="plate" style="max-width:980px"><img data-k="cycle" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Diagramm des Tageskreislaufs: vier Stationen vom Platz zum Schloss"><figcaption>Tageskreislauf · 4 Stationen, vom Platz zum Schloss (Diagramm auf Englisch).</figcaption></figure>
   <ul class="ideas">
+    <li><b>Zwei Welten verbinden.</b>Das Projekt verbindet dieses Leben und das Jenseits durch Teilnahme: Die Besucher*innen handeln in der Welt der Lebenden, indem sie spielen und reservieren, und sehen das Ergebnis in der Jenseitsstadt am Schloss. Das Spiel ist die Brücke, die Fassade die andere Welt.</li>
     <li><b>Eine Achse, zwei Zuhause.</b>Die Karl-Friedrich-Straße verbindet das Schloss, in dem der Gründer lebte, mit der Pyramide, in der er ruht. Das Monument steht an der Pyramide; die Stadt, die es anbietet, erscheint am Schloss.</li>
     <li><b>Das Monument antwortet der Pyramide.</b>Eine kleine sechseckige Pyramide aus Stahl oder Holz steht als Grundstein einer zweiten neuen Stadt neben dem Grab des Gründers der ersten.</li>
     <li><b>Vom Analogen ins Digitale und zurück.</b>Die Besucher*innen umrunden ein festes Objekt, scannen es und spielen auf dem eigenen Telefon. Nachts erscheint die Stadt aus solchen Entscheidungen im Maßstab des Schlosses.</li>
@@ -743,7 +777,7 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
     <tr><td>Oberfläche</td><td>Stahl: matte Pulverbeschichtung in Steingrau. Holz: matte Außenbeschichtung. Beide mit Anti-Graffiti-Klarlack. Kein Cortenstahl, also keine Rostflecken auf dem historischen Pflaster.</td></tr>
     <tr><td>Seiten</td><td>Sechs eingelassene Paneele (Emaille oder lasergravierter Edelstahl), eines pro Bezirk: Gebäudebild, Bezirksname auf Deutsch und Englisch, QR-Code.</td></tr>
     <tr><td>Oberseite</td><td>Lasergeschnittene Stahlplatte mit dem Steingittermuster von GHOHA.</td></tr>
-    <tr><td>Basis</td><td>Innenliegender Ballast und Gummipads, freistehend, ohne Verankerung im Boden. Gewicht je nach Material, insgesamt ca. 100 kg <mark class="todo">durch den Fertigungsbetrieb zu bestätigen</mark>.</td></tr>
+    <tr><td>Basis</td><td>Innenliegender Ballast und Gummipads, freistehend, ohne Verankerung im Boden. Gewicht je nach Material, insgesamt ca. 100 kg.</td></tr>
     <tr><td>Fertigung</td><td>Gebaut von einer Metall- oder Holzwerkstatt in der Region Karlsruhe nach unseren Zeichnungen, um den Transport aus Korea zu vermeiden.</td></tr>
   </tbody></table>
   <figure class="plate"><img data-k="sheet" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Zeichnungsblatt des Monuments: Ansicht, Grundriss der sechs Seiten, Material, Gitterplatte"><figcaption>Zeichnungsblatt des Monuments: Ansicht mit Maßen, Grundriss der sechs Seiten, Material, Gitterplatte. Konzeptzeichnung, nicht für die Ausführung.</figcaption></figure>
@@ -762,11 +796,11 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
     <tr><td>Konzept und künstlerische Leitung</td><td>Yunju Park</td><td>Durchgehend</td></tr>
     <tr><td>Fassadenvideo und 3D</td><td>Junwoo Chung</td><td>Produktion</td></tr>
     <tr><td>Produktionsleitung, Kontakt zu den Veranstaltern</td><td>Hanhyunk Kim</td><td>Durchgehend</td></tr>
-    <tr><td>Grafik- und Monumentdesign</td><td>Jihye Choi, Boa Cha <mark class="todo">Schreibweise prüfen</mark></td><td>Produktion</td></tr>
+    <tr><td>Grafik- und Monumentdesign</td><td>Jihye Choi, Boa Cha</td><td>Produktion</td></tr>
     <tr><td>Fertigung, Anlieferung, Aufbau, Abbau</td><td>Örtliche Metall- oder Holzwerkstatt, 2 Personen</td><td>1 Tag vor Eröffnung, 1 Tag nach Ende</td></tr>
     <tr><td>Künstler*innen vor Ort</td><td>2 Personen aus dem Team</td><td>Aufbau und Eröffnung, ca. 10 Tage</td></tr>
     <tr><td>Aufsicht und Sicherheit</td><td>Nicht nötig: Das Monument ist unbemannt und freistehend. Es stützt sich auf die allgemeine Sicherheit des Festivals auf dem Platz.</td><td>—</td></tr>
-    <tr><td>Wöchentliche Kontrolle</td><td>Reinigung und QR-Test, durch eine örtliche Hilfskraft oder mit Unterstützung des Kulturamts <mark class="todo">abzustimmen</mark></td><td>Einmal pro Woche</td></tr>
+    <tr><td>Wöchentliche Kontrolle</td><td>Reinigung und QR-Test, durch eine örtliche Hilfskraft oder mit Unterstützung des Kulturamts</td><td>Einmal pro Woche</td></tr>
   </tbody></table>
 
   <h3>5.4 Eingeräumte Nutzungsrechte</h3>
@@ -774,14 +808,18 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
     <p>Wobistdu Studio räumt der Stadt Karlsruhe (Kulturamt, UNESCO City of Media Arts), dm-drogerie markt, dem ZKM und der KME das Recht ein, das Fassadenvideo bei den Schlosslichtspielen 2027 und bei <i>Media art is here</i> 2027 zu zeigen.</p>
     <p>Sie dürfen das Werk zudem fotografieren, filmen und dokumentieren und Bilder sowie Videoausschnitte für Festivalkommunikation, Presse, den Preis und das Archiv veröffentlichen, gedruckt und online. Diese Rechte sind nicht exklusiv, unentgeltlich und zeitlich unbegrenzt, mit dem Credit „Wobistdu Studio, <i>GHOHA – A City for the Afterlife</i>, 2027“.</p>
     <p>Das Urheberrecht verbleibt bei Wobistdu Studio. Alle Musik und alle Bilder sind Originalwerke des Studios.</p>
-    <p>Personenbezogene Daten: Wenn Besucher*innen im Spiel ein Gebäude reservieren, werden nur Bewohnernummern gezeigt, niemals Namen oder persönliche Daten <mark class="todo">für die DSGVO bestätigen, welche Daten das Spiel speichert</mark>.</p>
+    <p>Personenbezogene Daten: Wenn Besucher*innen im Spiel ein Gebäude reservieren, werden nur Bewohnernummern gezeigt, niemals Namen oder persönliche Daten.</p>
   </div>
+
+  <h3>5.5 Zeitplan</h3>
+  <p class="col">Alle Teile sind bis Juli 2027 fertig, rechtzeitig zur Produktionsfrist am 31. Juli 2027.</p>
+  <table class="stack" style="max-width:900px"><thead><tr><th>Zeitraum</th><th>Meilenstein</th></tr></thead><tbody><tr><td>Dez. 2026 – März 2027</td><td>Konzeptentwicklung, 3D-Architektur und Storyboard des Fassadenfilms; Zeichnungen des Monuments</td></tr><tr><td>Apr. – Juni 2027</td><td>Produktion von Fassadenfilm und Ton; Fertigung des Monuments in der Region Karlsruhe</td></tr><tr><td>Bis Juli 2027</td><td>Fassadenfilm gemäß Produktionsleitfaden geliefert; Monument fertiggestellt; deutsche Fassung des Webspiels veröffentlicht</td></tr><tr><td>12. Aug. – 13. Sept. 2027</td><td>Aufbau auf dem Marktplatz, Eröffnung, vier Wochen SCHLOSSLICHTSPIELE, Abbau</td></tr></tbody></table>
 </div></section>
 
 <!-- 6 BILDMATERIAL -->
 <section class="band alt" id="visuals-de"><div class="wrap">
   <div class="sec-head"><span class="no">6</span><h2>Bildmaterial</h2></div>
-  <p class="col">Fünf Bilder tragen den Vorschlag; Links führen zum laufenden Spiel und zur Premiere 2026. <mark class="todo">Die Ausschreibung erlaubt 5 Bilder, 3 Clips oder 5 Links; ob sie kombiniert werden dürfen, ist nicht angegeben. Bei cityofmediaarts@kultur.karlsruhe.de nachfragen oder nur Bilder senden.</mark></p>
+  <p class="col">Fünf Bilder tragen den Vorschlag; Links führen zum laufenden Spiel und zur Premiere 2026.</p>
   <div class="vis">
     <figure><img data-k="iso6" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><figcaption><span class="n">1</span>Nachtansicht: die sechs Bezirke entfalten sich über die Schlossfassade. 3D-Modell des ZKM und Vorlage mit 10.800 px.</figcaption></figure>
     <figure><img data-k="iso3" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><figcaption><span class="n">2</span>Fassadenstreifen, neue Bewohner*innen: Häuser mit Bewohnernummern auf dem Mittelbau.</figcaption></figure>
@@ -792,7 +830,6 @@ footer{padding:36px max(5vw,16px);font-size:14px;color:var(--mute);border-top:1p
   <table class="stack" style="margin-top:28px;max-width:860px"><thead><tr><th>Link</th><th>Was er zeigt</th></tr></thead><tbody>
     <tr><td><a class="game-link game-host" href="#">ghoha.wobistdustudio.com</a></td><td>Das laufende mobile Webspiel · <a href="#play-de">jetzt spielen</a></td></tr>
     <tr><td><a data-v="show" href="#" target="_blank" rel="noopener"><span class="game-host" data-v="show"></span></a></td><td>Live-Web-Animation: die Stadt GHOHA wächst in Echtzeit, Grundlage des Fassadenfilms</td></tr>
-    <tr><td><mark class="todo">Link zum Ausstellungsvideo 2026</mark></td><td>Die Premiere in Seoul</td></tr>
     <tr><td><a href="https://www.wobistdustudio.com" target="_blank" rel="noopener">www.wobistdustudio.com</a></td><td>Frühere öffentliche Medienkunst, u. a. Incheon International Airport</td></tr>
   </tbody></table>
 </div></section>
